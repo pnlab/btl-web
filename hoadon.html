@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thông tin Hóa Đơn</title>
+    <link rel="stylesheet" href="hoadon.css">
+    <link rel="stylesheet" href="./content/font/fontawesome-5.15.1/css/all.css">
+	<!-- Latest compiled and minified CSS -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+
+	<!-- jQuery library -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+	<!-- Popper JS-->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+
+	<!-- Latest compiled JavaScript -->
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+    
+</head>
+<body>
+    <!-- <ul class="nav nav-tabs">
+        
+        <li class="nav-item active">
+            <a class="nav-link active" href="#">Thông tin Hóa Đơn</a>
+        </li>
+    </ul> -->
+    <div class="header">
+        THÔNG TIN HÓA ĐƠN
+    </div>
+
+    <div class="container">
+            <div class="grid fix-wide">
+                    
+                    <div class="row">
+                        <!-- <div class="col l-6"> -->
+                            
+                            <div class="ship">
+                                
+                                <div class="form-group">
+                                    <label for="usr" class="ship-title">Họ và tên:</label>
+                                    <input required="true" type="text" class="ship-input" id="usr" name="fullname" placeholder="Nhập ho va ten">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="ship-title">Email:</label>
+                                    <input required="true" type="email" class="ship-input" id="email" name="email" placeholder="Nhập email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone_number" class="ship-title">Số điện thoại:</label>
+                                    <input type="number" class="ship-input" id="phone_number" name="phone_number" placeholder="Nhập số điện thoại">
+                                </div>
+                                <div class="form-group">
+                                    <label for="address" class="ship-title">Địa chỉ:</label>
+                                    <input type="text" class="ship-input" id="address" name="address" placeholder="Số nhà/ Ngõ/ Đường/ Phố/ Phường/ Quận/ Tỉnh/ Thành phố">
+                                </div>
+                                <div class="form-group">
+                                    <label for="note" class="ship-title">Ghi chú thêm:</label>
+                                    <textarea class="textarea-input" rows="5" name="note" id="note"></textarea>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                        <!-- <div class="col l-6">
+                            <div class="ship-logo" style="background-image: url('https://seeklogo.com/images/T/the-pizza-company-logo-D44DBE70F1-seeklogo.com.png')"></div>
+                        </div> -->
+                    </div>
+                    <div class="m-btn">
+                        <a href="http://127.0.0.1:5500/giohang.html" class="product-btn__return">
+                            <i class="fas fa-arrow-left"></i>
+                            <span class="product-btn__return-title">Quay lại</span>
+                        </a>
+                        <button class="m-btn-pay" id="myBtn">Thanh toán</button>
+                            <!-- <span class="m-btn-pay-title">Thanh toán</span> -->
+                            <!-- <i class="fas fa-arrow-right"></i> -->
+                        <!-- </button> -->
+                        <div id="m-dialog" class="dialog">
+                            <div class="diglog-content">
+                                <span class="close">X</i></span>
+                                <p> Cảm ơn quý khách đã mua hàng.!
+                                    Qúy khách vui lòng để ý điện thoại trong thời gian giao hàng.!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+    </div>
+
+ 
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="hoadon.js"></script>
+    <!-- <script type="text/javascript">
+        function confirmBtn(){
+            var option = confirm('Bạn có chắc chắn xác nhận làm đơn hàng');
+            if(!option) {
+                return;
+            }
+        }
+    </script> -->
+</body>
+</head>
