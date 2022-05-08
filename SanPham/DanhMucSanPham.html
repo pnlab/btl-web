@@ -1,0 +1,172 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../giohang.css">
+        <link rel="stylesheet" href="./DanhMucSanPham.css">
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script src="./SanPham.js"></script>
+        <title>Danh mục sản phẩm</title>
+    </head>
+    <body>
+        <header class="dieuhuong">
+            <!-- logo -->
+            <div class="dieuhuong-trai">
+              <a href="index.html">
+                <img id="logo-image" src="https://www.logolynx.com/images/logolynx/b2/b23666d57f4e17102209423105dfc442.png"
+                  alt="">
+              </a>
+              <div class="danhmuc">
+                <button class="danhmuc-nut" onclick="hienThiDanhMuc()">Danh mục
+        
+                </button>
+                <div class="danhmuc-noidung" id="danhmuc-nd">
+                  <a href="#">Nước uống</a>
+                  <a href="#">Rau củ</a>
+                  <a href="#">Thịt và cá</a>
+                  <a href="#">Trứng và sữa</a>
+                  <a href="#">Bánh</a>
+                  <a href="#">Gia vị</a>
+                </div>
+              </div>
+        
+            </div>
+            <!-- Tim kiem -->
+            <div id="timkiem">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png"
+                alt="">
+        
+              <input type="text">
+        
+            </div>
+            <!-- Dang nhap -->
+            <div class="dieuhuong-phai">
+        
+              <div class="giohang-icon">
+                <img class="dieuhuong-icon"
+                  src="https://thumbs.dreamstime.com/b/shopping-cart-icon-trolley-icon-shopping-cart-icon-trolley-icon-vector-illustration-isolated-white-background-163727286.jpg"
+                  alt="">
+        
+                <div class='giohang-soluong'>5</div>
+              </div>
+              <div>
+                <img class="dieuhuong-icon" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
+                  alt="">
+              </div>
+        
+            </div>
+          </header>
+          <div class="noi-dung">
+            <div class='san_pham'>
+                <div id="hinh_anh_san_pham">
+                  <img src="https://www.sieuthigialac.com.vn/wp-content/uploads/2020/03/siukay-bo-med-600x467.png"
+                  alt="">
+                </div>
+                <div id="thong_tin_san_pham">
+                  <div id="ten_san_pham">
+                    Mì Siu Kay Vị Bò Acecook
+                  </div>   
+                  <div class='gia_ca'>
+                    <span id="don_vi_san_pham">₫</span>
+                    <span id="gia_tri_san_pham">12.200</span>
+                  </div> 
+                  <button id = "them_gio_hang" class="them_gio_hang do">
+                    <span>Thêm vào giỏ hàng</span>
+                    <i class="ion-ios-cart"></i>
+                  </button>
+                </div>              
+                <div id="thong_tin_day_du_san_pham" class="thong_tin_day_du_san_pham">
+                  <div class="thong_tin">
+                    <div id="anh_san_pham">
+                      <img src="https://cdn.tgdd.vn/Products/Images/2565/175976/bhx/mi-siukay-vi-bo-goi-127g-201912041613418932.JPG" alt="">
+                    </div>
+                    <div id="thong_tin_mua_san_pham">
+                      <h3>Mì Siu Kay Vị Bò Acecook</h3>
+                      <div id="mo_ta_san_pham">
+                        <p>Với sản phẩm tươi sống, trọng lượng thực tế có thể chênh lệch khoảng 10%. Sản phẩm là mì dạng nấu 4 phút, với sự kết hợp tuyệt vời của nước súp ngon ngọt đậm đà 
+                        <span id="ba_cham">...</span>
+                        <span id="doc_them">từ hải sản và vị cay của ớt thẩm thấu tận sâu vào bên trong sợi mì khiến người dùng thăng hoa với độ cay xé lưỡi, và sau đó là cảm giác khoan khoái vượt qua nỗi đau ngọt ngào.</span></p>
+                        <input type="button" onclick="docThemMoTaSanPham()" id="nutDocThem" value="Đọc thêm" />
+                      </div>
+                      <div class='gia_ca'>
+                        <h3 id="don_vi_san_pham">₫</h3>
+                        <h3 id="gia_tri_san_pham">12.200</h3>
+                      </div> 
+                      <div id="so_luong_san_pham">
+                        <div id="so_luong_san_pham_muon_mua">
+                          <input type="button" onclick="truSoLuongSanPhamMuonMua()" id="tru" value="-">
+                          <input type="text" value="1" id="so_luong">
+                          <input type="button" onclick="congSoLuongSanPhamMuonMua(200)" id="cong" value="+">
+                        </div>
+                        <div id="so_luong_san_pham_con">
+                          <span id="so_luong_con">200</span>
+                          <span id="don_vi_san_pham_con">sản phẩm có sẵn</span>
+                        </div>
+                      </div>
+                      <button id="hoa_don_dat_hang">ĐẶT HÀNG</button>
+                    </div>
+                  </div>
+                  
+                </div>
+                <script src="./SanPham.js"></script>
+            </div>
+            <div class='san_pham'>
+              <div id="hinh_anh_san_pham">
+                <img src="https://www.sieuthigialac.com.vn/wp-content/uploads/2020/03/siukay-bo-med-600x467.png"
+                alt="">
+              </div>
+              <div id="thong_tin_san_pham">
+                <div id="ten_san_pham">
+                  Mì Siu Kay Vị Bò Acecook
+                </div>   
+                <div class='gia_ca'>
+                  <span id="don_vi_san_pham">₫</span>
+                  <span id="gia_tri_san_pham">12.200</span>
+                </div> 
+                <button id = "them_gio_hang" class="them_gio_hang do">
+                  <span>Thêm vào giỏ hàng</span>
+                  <i class="ion-ios-cart"></i>
+                </button>
+              </div>
+              
+              <div id="thong_tin_day_du_san_pham" class="thong_tin_day_du_san_pham">
+                <div class="thong_tin">
+                  <div id="anh_san_pham">
+                    <img src="https://cdn.tgdd.vn/Products/Images/2565/175976/bhx/mi-siukay-vi-bo-goi-127g-201912041613418932.JPG" alt="">
+                  </div>
+                  <div id="thong_tin_mua_san_pham">
+                    <h3>Mì Siu Kay Vị Bò Acecook</h3>
+                    <div id="mo_ta_san_pham">
+                      <p>Với sản phẩm tươi sống, trọng lượng thực tế có thể chênh lệch khoảng 10%. Sản phẩm là mì dạng nấu 4 phút, với sự kết hợp tuyệt vời của nước súp ngon ngọt đậm đà 
+                      <span id="ba_cham">...</span>
+                      <span id="doc_them">từ hải sản và vị cay của ớt thẩm thấu tận sâu vào bên trong sợi mì khiến người dùng thăng hoa với độ cay xé lưỡi, và sau đó là cảm giác khoan khoái vượt qua nỗi đau ngọt ngào.</span></p>
+                      <input type="button" onclick="docThemMoTaSanPham()" id="nutDocThem" value="Đọc thêm" />
+                    </div>
+                    <div class='gia_ca'>
+                      <h3 id="don_vi_san_pham">₫</h3>
+                      <h3 id="gia_tri_san_pham">12.200</h3>
+                    </div> 
+                    <div id="so_luong_san_pham">
+                      <div id="so_luong_san_pham_muon_mua">
+                        <input type="button" onclick="truSoLuongSanPhamMuonMua()" id="tru" value="-">
+                        <input type="text" value="1" id="so_luong">
+                        <input type="button" onclick="congSoLuongSanPhamMuonMua(200)" id="cong" value="+">
+                      </div>
+                      <div id="so_luong_san_pham_con">
+                        <span id="so_luong_con">200</span>
+                        <span id="don_vi_san_pham_con">sản phẩm có sẵn</span>
+                      </div>
+                    </div>
+                    <button id="hoa_don_dat_hang">ĐẶT HÀNG</button>
+                  </div>
+                </div>
+                
+              </div>
+              <script src="./SanPham.js"></script>
+          </div>
+      </div>
+    </body>
+</html>
