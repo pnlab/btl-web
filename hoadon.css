@@ -1,91 +1,108 @@
-/* .m-popup{
+.m-dialog{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 50px;
+    background-color: #0000007a;
+   
+   
+}
+/* row */
+.m-row{
+    margin-top: 4px;
+    width: 100%;
+}
+.m-label{
+    text-transform: uppercase;
+    font-weight: bold;
+   
+}
+.m-popup{
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 4px;
+   
     border: 1px solid #ccc;
     width: 400px;
     background-color: #fff;
    
-} */
-.header{
-    font-size: large;
-    text-align: center;
-    
 }
+.m-popup .m-popup-header{
+    font-size: 15px;
+    font-weight: 700;
+    padding: 24px;
 
-.ship{
-    margin-top: 3%;
-    text-align: center;
-    font-size: larger;
-    min-width: 400px;
-    height: 300px;
-   
 }
-.ship .form-group{
-    margin-top: 1%;
-    display: flex;
-
-   
-}
-.form-group .ship-title{
-    margin-left: 600px;
-    
-    float: left;
-}
-
-.ship-input::placeholder{
-    font-size: 11px;
-    color: #BBBBBB;
-}
-.m-btn{
-    margin-left: 700px;
-}
-.m-btn .m-btn-pay{
-    margin-left: 1%;
-}
-
-
- 
-.dialog{
-    display: none; 
-    position: fixed;
-   
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    width: 500px;
-    overflow: auto;
-    
-    background-color:aquamarine;
-   
-} 
-
-
-.close{
-    
+.m-popup .m-popup-close{
     position: absolute;
-   
     right: 0;
     top: 0;
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     text-align: center;
-    line-height: 16px;
-    font-size: 16px;
-
+    line-height: 24px;
+    font-size: 24px;
     color: red;
     opacity: .6;
     cursor: pointer;
     border-radius:0px 4px 0px 4px;
+    
 }
-.close:hover ,.close:focus {
-    background-color: rgb(233, 147, 147);
-    cursor: pointer;
+.m-popup .m-popup-close:hover{
+    
+    opacity: 1;
+    background-color:rgb(240, 230, 230) ;
+
 }
 
+.m-popup-centent{
+    display: flex;
+    padding: 24px;
 
+}
+.m-popup .m-popup-footer{
+    display: flex;
+    justify-content: end;
+    height: 60px;
+    background-color: #E5E5E5;
+    
+    padding: 0 24px;
+    
+}
+.m-popup .m-popup-footer button{
+    margin-left: 16px;
+}
+.m-popup .m-popup-icon{
+    width: 40px;
+    height: 40px;
+    background-color:#E5E5E5;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+}
+.m-popup .m-popup-text{
+    margin-left: 10px;
+}
+
+/* input */
+.m-input{
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 40px;
+    padding: 0 16px;
+
+}
+.m-input::placeholder{
+    font-size: 11px;
+    color: #BBBBBB;
+}
+.m-input:focus{
+    border-color: #019160;
+    outline: unset;
+}
 

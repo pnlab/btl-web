@@ -9,7 +9,7 @@ function tinhGia() {
     const gia = e.querySelector(".gia").innerText;
     const soLuong = e.querySelector(".soluong").value;
     const tong = Number(gia) * Number(soLuong)
-    e.querySelector(".tong").innerText = Math.round(tong * 100) / 100;
+    // e.querySelector(".tong").innerText = Math.round(tong * 100) / 100;
     tongTien += tong;
   });
   document.querySelector("#tong-tien").innerText = Math.round(tongTien * 100) / 100;
