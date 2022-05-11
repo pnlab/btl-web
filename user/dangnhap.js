@@ -119,6 +119,10 @@ function xacnhandangky(event){
 			matkhaudangkynhaplai.style.border = "1px solid #ff8471";
 			loidangky("loi_mat_khaudangkynhaplai", "Mật khẩu phải nhiều hơn 8 kí tự");
 		}
+		else if( giatrimatkhaudangkynhaplai != giatrimatkhaudangky){
+			matkhaudangkynhaplai.style.border = "1px solid #ff8471";
+			loi("loi_mat_khaudangkynhaplai", "Mật khẩu không đúng");
+		}
 		else{
 			matkhaudangkynhaplai.style.border = "1px solid #7b5be4";
 		    loidangky("loi_mat_khaudangkynhaplai", "");

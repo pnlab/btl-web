@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="dangnhap.css">
+         
+    <title>Đặt lại mật khẩu</title>
+</head>
+<body>
+    
+    <div class="khung">
+        <div class="bieumaus">
+            <!-- Đăng nhập -->
+            <div class="bieumau dangnhap">
+                <span class="tieude">Đặt lại mật khẩu</span>
+
+                <form method="" action="" onsubmit="return xacnhan(event);">
+                    <div class="truongnhap">
+                        <input type="password" id="matkhaucu" class="password" placeholder="Nhập mật khẩu hiện tại của bạn">
+                    </div>
+                    <div class="loi" id="loi_mat_khau_cu"></div>
+
+                    <div class="truongnhap">
+                        <input type="password" id="matkhaumoi" class="password" placeholder="Nhập mật khẩu mới của bạn">
+                    </div>
+                    <div class="loi" id="loi_mat_khau_moi"></div>
+
+                    <div class="truongnhap">
+                        <input type="password" id="matkhaumoinhaplai" class="password" placeholder="Nhập lại mật khẩu mới của bạn">
+                    </div>
+                    <div class="loi" id="loi_mat_khau_moi_nhap_lai"></div>
+
+                    <div class="truongnhap button">
+                        <input type="submit" value="Lưu">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script src="datlaimatkhau.js"></script>
+
+</body>
+</html>
